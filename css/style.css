@@ -7,7 +7,9 @@ body{
     color: #0A1436;
     font-weight: 300;
 }
-
+p{
+    margin-bottom: 0;
+}
 
 .wrapper{
     width: 100%;
@@ -106,7 +108,7 @@ p.author span{
     background: #ffffff;
     border-radius: 24px;
     
-    width: 736px;
+   
 }
 .payroll-width{
     margin: 0 16px;
@@ -127,7 +129,7 @@ p.author span{
     background: #ffffff;
     border-radius: 24px;
     
-    width: 172px;
+    
 }
 
 /* <!-- DASGBOARD MAIN SECTION END --> */
