@@ -1,8 +1,11 @@
 /**
 font-family: 'Rubik', sans-serif;
 **/
-*{
+body{
     font-family: 'Rubik', sans-serif;
+    background: #E5E5E5;
+    color: #0A1436;
+    font-weight: 300;
 }
 
 
@@ -42,3 +45,102 @@ button.no-outline {
     position: absolute;
     top: 70px;
 } 
+
+/* <!-- DASHBOARD SECTION START --> */
+
+/* <!-- DASHBOARD HEADER SECTION START --> */
+.search-profile-header{
+    background-color: #ffffff;
+    height: 82px;
+}
+.search{
+    position: relative;
+    cursor: pointer;
+    border-radius: 30px;
+    background: #E5E5E5;
+    padding: 12px ;
+
+}
+.search input{
+    color: red;
+    
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 300;
+
+}
+p.author span{
+    font-size: 14px;
+    line-height: 1.2;
+    color: #91929E;
+}
+.search-profile-header{
+    margin-bottom: 40px;
+}
+/* <!-- DASHBOARD HEADER SECTION END --> */
+
+/* <!-- DASGBOARD MAIN SECTION START --> */
+.my-form{
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    list-style: 1.2;
+    font-weight: 500;
+}
+.dashboard-items .month-dropdown{
+    width: 180px;
+    padding: 15px 10px;
+    background: #ffffff;
+    border-radius: 14px;
+    
+}
+.dashboard-items{
+    margin-bottom: 40px;
+}
+.payroll-background {
+    background: #ffffff;
+    border-radius: 24px;
+    
+    width: 736px;
+}
+.payroll-width{
+    margin: 0 16px;
+    width: 180px;
+    padding: 0 16px;
+}
+.TDS-Deductions {
+    border-left: 1px solid #51B3EB;
+    
+}
+.Employees-Net-Pay{
+    border-left: 1px solid #51B3EB;
+}
+.payroll-background span {
+    color: #91929E;
+}
+.pay-day-background{
+    background: #ffffff;
+    border-radius: 24px;
+    
+    width: 172px;
+}
+
+/* <!-- DASGBOARD MAIN SECTION END --> */
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!-- DASHBOARD SECTION END --> */
