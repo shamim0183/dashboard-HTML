@@ -87,6 +87,20 @@ p.author span{
 .search-profile-header{
     margin-bottom: 40px;
 }
+span.date-logo {
+    background: #C3D4DF;
+    padding: 5px;
+    border-radius: 12px;
+}
+.small-font{
+    font-size: 14px;
+    line-height: 1.2;
+    color: #91929E;
+    margin-bottom: 10px;
+}
+.pay-day-content {
+    padding: 14px 26px 11px 26px;
+}
 /* <!-- DASHBOARD HEADER SECTION END --> */
 
 /* <!-- DASGBOARD MAIN SECTION START --> */
