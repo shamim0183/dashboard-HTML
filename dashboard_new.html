@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dasboard_new</title>
 
+    
+     <!-- FONT AWESOME ICON -->
+     <script src="https://kit.fontawesome.com/152a5c6911.js" crossorigin="anonymous"></script>
+
+
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <!-- FONT AWESOME ICON -->
-    <script src="https://kit.fontawesome.com/152a5c6911.js" crossorigin="anonymous"></script>
+    
 
     <!-- BOOTSTRAP STYLESHEET -->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 
     <!-- CUSTOME STYLESHEET -->
+    <link rel="stylesheet" href="./css/progresscircle.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -35,7 +40,7 @@
                         </span>
                         <p class="author mx-3 my-0">Kinanthi Ayani <span class="d-block">HR Manager</span></p>
                         <span>
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            <a href="#"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                         </span>
                     </div>
                 </div>
@@ -56,7 +61,7 @@
                 </div>
             </div>                     
         </div>
-        <div class="payroll-background  p-5">
+        <div class="payroll-background mb-5 p-5">
             <div class="subscription-start d-flex align-items-center w-50 float-start">
                 
                     <span class="date-icon"><img src="./image/watch.png" alt="watch" class="img-fluid img-responsive"></span>
@@ -71,8 +76,110 @@
                
             </div>
         </div>
+        <div class="subscription-statistics-section">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="subscription-statistics">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class=" px-5 pt-5">
+                                    <p class="h2 mb-4">Subscription Statistics </p>
+                                    <div class=" d-flex flex-row gap-5">
+             
+                                        <div class="circlechart" data-percentage="100">100
+                                            People</div>
+                                        <div class="circlechart" data-percentage="65">65%</div>
+                                        <div class="circlechart" data-percentage="35">35%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="px-5 pt-4 mt-4">
+                                    <div class="statistic details mt-4">
+                                        <p class=" author mb-2">Total employees limit</p>
+                                        <p class="h6">100 People</p>
+                                    </div>
+                                    <div class="statistic details mt-4">
+                                        <p class=" author mb-2">Total employees limit</p>
+                                        <p class="h6">100 People</p>
+                                    </div>
+                                    <div class="statistic details mt-4">
+                                        <p class=" author mb-2">Total employees limit</p>
+                                        <p class="h6">100 People</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="support px-5 pt-5">
+                        <p class="h2 mb-5 ">For Support</p>
+                        <p class="author mb-2 "><img src="./image/Message-5.png" alt="" class="img-fluid me-2 ">Email</p>
+                        <p class="support-text">support@simplixpayroll.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 <!-- DASGBOARD MAIN SECTION END -->
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="./js/progresscircle.js"></script>
+	<script>
+		$('.circlechart').circlechart(); // Initialization
+	</script>
+
+
 </body>
 </html>

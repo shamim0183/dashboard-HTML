@@ -9,6 +9,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: #0A1436;
 
 }
 p{
@@ -84,6 +85,11 @@ p.author span{
     line-height: 1.2;
     color: #91929E;
 }
+.author{
+    font-size: 14px;
+    line-height: 1.2;
+    color: #91929E;
+}
 .search-profile-header{
     margin-bottom: 40px;
 }
@@ -104,6 +110,15 @@ span.date-logo {
 /* <!-- DASHBOARD HEADER SECTION END --> */
 
 /* <!-- DASGBOARD MAIN SECTION START --> */
+.payroll-cost-summary {
+    margin-bottom: 24px;
+}
+.bar-chart-bg {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 4px 4px 18px -2px rgb(231 228 232 / 80%);
+}
 .my-form{
     background: transparent;
     border: none;
@@ -161,6 +176,25 @@ span.date-logo {
 .subscription-end {
     border-left: 1px solid #51B3EB;
 }
+.subscription-statistics{
+    box-shadow: 4px 4px 18px -2px rgba(231, 228, 232, 0.8);
+    background:#ffffff;
+    border-radius: 24px;
+    height: 313px;
+}
+.support{
+    background: #ffffff;
+    box-shadow: 4px 4px 18px -2px rgb(231 228 232 / 80%);
+    border-radius: 24px;
+    
+    height: 313px;
+}
+.support-text{
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #0A1436;
+}
 /* DASHBOARD NEW END */
 /* <!-- EMPLOYEE MAIN SECTION START --> */
 .employye-search-icon .search-icon{
@@ -215,12 +249,91 @@ p.dark-color {
 }
 .page-item .another-color{
     background: #E0EFF8;
+    padding: 12px;
+}
+/* <!-- DASHBOARD SECTION END --> */
+/* <!-- EMPLOYEE BASIC INFO SECTION START --> */
+.basicinfo{
+    box-shadow: 4px 4px 18px -2px rgba(231, 228, 232, 0.8);
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 40px;
+}
+.basic-label {
+    position: relative;
+}
+.basic-label .basic-radius {
+   border-radius: 12px;
+   padding: 12px;
+}
+.basic-label label {
+    position: absolute;
+    top: -12px;
+    left: 40px;
+    background: #ffffff;
+    color: #91929E;
+    font-weight: 400;
+    padding: 0 5px;
+}
+.basic-label ::-webkit-input-placeholder {
+   color: #0A1436;
+   font-weight: 400;
+   padding: 14px;
+}
+p.form-payment {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #0074BD;
+    font-weight: 400;
+}
+.colorful-text{
+    color: #0074BD;
+    
+}
+.payslip-color{
+    color: #ffffff;
+    background: #0A1436;
+    padding: 10px 24px;
+    border-radius: 14px;
+    font-weight: 500;
+}
+/* <!-- EMPLOYEE BASIC INFO SECTION START --> */
+/* <!-- EMPLOYEE ADD SECTION START --> */
+.remove-field{
+    color: #F45959;
+}
+.more-field-color{
+    color: #100F2E;
+}
+.border-down {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 32px;
+    margin-bottom: 24px;
 }
 
-
-
-
-
-
-
-/* <!-- DASHBOARD SECTION END --> */
+/* <!-- EMPLOYEE ADD SECTION END --> */
+/* <!-- EDIT PROFILE SECTION START --> */
+.edit-profile-section{
+    background: #ffffff;
+    border-radius: 24px;
+    position: relative;
+    padding: 38px;
+}
+.edit-profile-section .cross-button{
+    position: absolute;
+}
+.bg-image {
+    background-image: url(../image/Gallery.svg);
+    background-repeat: no-repeat;
+    background-position-x: 35em;
+    background-position-y: 10px;
+    cursor: pointer;
+}
+.edit-profile {
+    padding: 40px;
+}
+.edit-profile-section .cross-button {
+    position: absolute;
+    right: 34px;
+}
+/* <!-- EDIT PROFILE SECTION END --> */
