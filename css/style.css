@@ -20,7 +20,7 @@ p{
     width: 100%;
 }
 .offcanvas-start{
-    width: 381px;
+    width: 280px;
     
 }
 .offcanvas{
@@ -28,12 +28,14 @@ p{
 }
 .nav .nav-item .nav-link:focus {
     background: #0A1436;
+    color: #ffffff;
 }
 .nav .nav-item .nav-link{
     background: #ffffff;
     padding: 12px;
     margin-bottom: 16px;
     border-radius: 30px;
+    font-weight: 400;
 }
 .nav .nav-item a span{
     margin-right: 10px;
@@ -41,6 +43,13 @@ p{
 .nav .nav-item a span svg{
     
     stroke: red;
+}
+.nav-link{
+    color: #0A1436;
+}
+.nav-link:hover{
+    color: #0A1436;
+    background: #0A1436;
 }
 
 .active:focus{
