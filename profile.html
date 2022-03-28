@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard</title>
+    <title>profile</title>
+
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,17 +17,12 @@
     <!-- BOOTSTRAP STYLESHEET -->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 
-    <!-- BAR CHART PLUGIN -->
-    <link rel="stylesheet" href="./dist/bar.chart.min.css" />
-
     <!-- CUSTOME STYLESHEET -->
     <link rel="stylesheet" href="./css/style.css">
-    
+
 </head>
 <body>
-    
-
-    <!-- SIDENAV SECTION START -->
+        <!-- SIDENAV SECTION START -->
 
 
     <!-- <div class="wrapper d-flex align-items-stretch">
@@ -121,144 +117,290 @@
     </div>
 
     <!-- SIDENAV SECTION END -->
-
-
-
-
-
+<!-- DASHBOARD HEADER SECTION START -->
+<div class="search-profile-header d-flex align-items-center">
     
-        <!-- DASHBOARD SECTION START -->
-        <!-- DASHBOARD HEADER SECTION START -->
-        <div class="search-profile-header d-flex align-items-center">
+    <div class="container">
+        
+        <div class="d-flex justify-content-between align-items-center">
+
+            <a href="#" class="back-option">
+                <span><img src="./image/Arrow - Left.jpg" alt="" class="img-fluid me-2"></span>
+                <span>Back</span>
+            </a>
             
-                <div class="container">
-                    
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="search d-flex align-items-center">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                            <input class="ms-3" type="search" name="" id="" placeholder="Search for employee">
-                        </div>
-                        <div class="profile">
-                            <div class="d-flex align-items-center text-start">
-                                <span>
-                                    <img class="img-fluid" src="./image/ladiespic.png" alt="ladiespic">
-                                </span>
-                                <p class="author mx-3 my-0">Kinanthi Ayani <span class="d-block">HR Manager</span></p>
-                                <span>
-                                    <a href="#"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
+            <div class="profile">
+                <a href="#" class="d-flex align-items-center text-start">
+                    <span>
+                        <img class="img-fluid" src="./image/ladiespic.png" alt="ladiespic">
+                    </span>
+                    <p class="author mx-3 my-0">Kinanthi Ayani <span class="d-block">HR Manager</span></p>
+                    <span>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </span>
+                </a >
+            </div>
         </div>
-    
-        <!-- DASHBOARD HEADER SECTION END -->
-        <!-- DASGBOARD MAIN SECTION START -->
-        <main>
-            <div class="container">
-                <div class="dashboard-items">                    
-                        <div class=" d-flex justify-content-between align-items-center">
-                            <div class="dashboard-title">
-                                <div class="h1">Dashboard</div>
-                                
-                            </div>
-                            <div class="month-dropdown d-flex align-items-center justify-content-center">
-                                <label >
-                                    Show:
-                                </label>
-                                <select  class=" my-form" aria-label="Default select example">
-                                    <option selected>This Month</option>
-                                    <option value="1">January</option>
-                                    <option value="2">February</option>
-                                    <option value="3">March</option>
-                                  </select>
-                            </div>
-                        </div>                     
+    </div>    
+</div>
+
+<!-- DASHBOARD HEADER SECTION END --> 
+
+<!-- DASHBOARD PROFILE SECTION START --> 
+ <main>
+     <div class="container">
+        <div class="dashboard-items">                    
+            <div class=" d-flex justify-content-between align-items-center">
+                <div class="dashboard-title">
+                    <div class="h1">Profile</div>                    
                 </div>
-                <div class="dashboard-payroll">
-                    <div class="row">
-                        <div class="col-lg-8 mb-sm-5">
-                            <div class="payroll-background">
-                                <div class="d-flex p-4">
-                                    <div class="payroll-cost payroll-width">
-                                        <p class="small-font">Payroll Total Cost</p>
-                                        <p class="h6">BDs$ <br>
-                                            34,23,666</p>
-                                    </div>
-                                    <div class="TDS-Deductions payroll-width">
-                                        <p class="small-font">TDS Deductions</p>
-                                        <p class="h6">BDs$ <br>                                            
-                                            4,23,666</p>
-                                    </div>
-                                    <div class="Employees-Net-Pay payroll-width">
-                                        <p class="small-font">Employees Net Pay</p>
-                                        <p class="h6">BDs$ <br>                                   
-                                            30,00,000</p>
-                                    </div>
-                                </div>                            
-                            </div>
-                        </div>
-                        <div class="col-lg-4 ">
-                            <div class="row">
-                               
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="pay-day-background">
-                                        <div class="pay-day-content ">
-                                            <span class="date-logo d-inline-block mb-2"><img src="./image/Grid.png" alt="" class="img-fluid"></span>
-                                            <p class="small-font">Pay Date</p>
-                                            <p class="h6">26th, Mar</p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="pay-day-background">
-                                        <div class="pay-day-content ">
-                                            <span class="date-logo d-inline-block mb-2"><img src="./image/Grid.png" alt="" class="img-fluid"></span>
-                                            <p class="small-font">No. of Employees</p>
-                                            <p class="h6">1209</p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                
+                <div class="add-people">
+                    <a href="" class="bg-color d-flex"><span><img src="./image/Arrow - Bottom.png" alt="user" class="img-fluid"></span>Download Salary Statement</a>
+                </div>
+            </div>                     
+        </div>
+        <!-- PROFILE AND SALARY START -->
+        <div class="row">
+            <div class="col-6">
+                <div class="author-content-info">
+                    <div class="container">
+                        <div class="author-content">
+                            <div class="d-flex align-items-center justify-content-center flex-column">
+                                <div class="profile-image mb-3"><img src="./image/oldmane.png" alt="" class="img-fluid"> </div>
+                                <a href="#" ><img src="./image/Edit.png" alt="" class="img-fluid edit button"></a>
+                                <div class="author-name h4 mb-2">Guy Hawkins</div>
+                                <div class="author-title mb-4">Marketing Coordinator</div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="payroll-cost-summary">
-                    <div class=" d-flex justify-content-between align-items-center">
-                        <div class="dashboard-title">
-                            <div class="h3">Payroll Cost Summary</div>
-                        </div>
-                        <div class="month-dropdown d-flex align-items-center justify-content-center">
-                            <label >
-                                Show:
-                            </label>
-                            <select  class=" my-form" aria-label="Default select example">
-                                <option selected>Last Year</option>
-                                <option value="1">2020</option>
-                                <option value="2">2019</option>
-                                <option value="3">2018</option>
-                              </select>
-                        </div>
-                    </div> 
-                </div>
-                <div class="bar-chart-bg">
-                    <div id="chtAnimatedBarChart" class="bcBar">
+                    <div class="border-space">
+
                     </div>
-                    <p class="h4 text-center mt-4">2020</p>
+                    <div class="container">                    
+                        <div class="main-profile">
+                            <form action="">
+                                <p class="h3 mb-5 mt-5">Main info</p>
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="profile-label mb-3">
+                                                <label for="" class="mb-2">Designation</label>
+                                                <input type="text" name="" id="" class="form-control basic-radius" placeholder="Marketing Coordinator">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="profile-label mb-3">
+                                                <label for="" class="mb-2">Hire Date</label>
+                                                <input type="date" name="" id="" class="form-control basic-radius" placeholder="Marketing Coordinator">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="profile-label mb-5">
+                                                <label for="" class="mb-2">Nationality</label>
+                                                <select class="form-select basic-radius" aria-label="Default select example">
+                                                    <option selected>Swiss</option>
+                                                    <option value="1">Bangladesh</option>
+                                                    <option value="2">Pakistan</option>
+                                                    <option value="3">Canada</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="profile-label mb-5">
+                                                <label for="" class="mb-2">Gender</label>
+                                                <select class="form-select basic-radius" aria-label="Default select example">
+                                                    <option selected>Female</option>
+                                                    <option value="1">Male</option>
+                                                    <option value="2">female</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="profile-label mb-5">
+                                                <label for="" class="mb-2">Rate</label>
+                                                <select class="form-select basic-radius" aria-label="Default select example">
+                                                    <option class="ms-4" selected>Daily</option>
+                                                    <option value="1">Daily</option>
+                                                    <option value="2">Monthly</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="profile-label mb-5">
+                                                <label for="" class="mb-2">Payroll</label>
+                                                <input type="text" name="" id="" class="form-control basic-radius" placeholder="200">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="profile-label mb-5">
+                                                <label for="" class="mb-2">Frequency of Payment </label>
+                                                <select class="form-select basic-radius" aria-label="Default select example">
+                                                    <option class="ms-4" selected>Weekly</option>
+                                                    <option value="1">Daily</option>
+                                                    <option value="2">Monthly</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="profile-label mb-5">
+                                                <label for="" class="mb-2">National Registration #</label>
+                                                <input type="text" name="" id="" class="form-control basic-radius" placeholder="123123-3321">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="profile-label mb-5">
+                                                <label for="" class="mb-2">Date of Birth</label>
+                                                <input type="date" name="" id="" class="form-control basic-radius">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="profile-label mb-5">
+                                                <label for="" class="mb-2">NIS # class="mb-2"</label>
+                                                <input type="text" name="" id="" class="form-control basic-radius" placeholder="AA123456C">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="profile-label mb-5">
+                                                <label for="" class="mb-2">NIS Code</label>
+                                                <select class="form-select basic-radius" aria-label="Default select example">
+                                                    <option class="ms-4" selected>R</option>
+                                                    <option value="1">S</option>
+                                                    <option value="2">H</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="profile-label mb-5">
+                                                <label for="" class="mb-2">TAMIS#</label>
+                                                <input type="text" name="" id="" class="form-control basic-radius" placeholder="235342535623">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="profile-label mb-5">
+                                                <label for="" class="mb-2">TAX Code</label>
+                                                <input type="text" name="" id="" class="form-control basic-radius" placeholder="250W">
+                                            </div>
+                                        </div>
+                                       
+                                        <p class="h3 mb-5">Contact Info</p>
+                                        <div class="col-6">
+                                            <div class="profile-label mb-5">
+                                                <label for="" class="mb-2">Email</label>
+                                                <input type="email" name="" id="" class="form-control basic-radius" placeholder="guyhaw@gmail.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="profile-label mb-5">
+                                                <label for="" class="mb-2">Mobile Number</label>
+                                                <input type="text" name="" id="" class="form-control basic-radius" placeholder="(246) 432-6901">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="profile-label ">
+                                                <label for="" class="mb-2">Address</label>
+                                                <input type="text" name="" id="" class="form-control basic-radius" placeholder="Hoytes Village, Saint James, Barbados">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
-        <!-- DASGBOARD MAIN SECTION END -->
-        <!-- DASHBOARD SECTION END -->
+            <div class="col-6">
+                <div class="author-content-info">
+                    <div class="container">
+                        <p class="h3 mb-5 px-2">Salary Statement</p>
+                        <table class="table profile-table table.responsive">
+                           
+                                <tr class="green-text">
+                                    <th>Basic Payment</th>
+                                    <td>BDs$ 2,370</td>                                
+                                </tr>
+                                <tr class="green-text">
+                                    <th>Dearness Allowance</th>
+                                    <td>BDs$ 474</td>
+                                </tr>
+                                <tr class="green-text">
+                                    <th>House Rent Allowance</th>
+                                    <td>BDs$ 1,185</td>
+                                </tr>
+                                <tr class="green-text">
+                                    <th>Conveyance</th>
+                                    <td>BDs$ 1,420</td>
+                                </tr>
+                                <tr class="green-text">
+                                    <th>Medical Expenses</th>
+                                    <td>BDs$ 0</td>
+                                </tr>
+                                <tr class="green-text">
+                                    <th>Special</th>
+                                    <td>BDs$ 1,037</td>
+                                </tr>
+                                <tr class="green-text">
+                                    <th>Bonus</th>
+                                    <td>BDs$ 1,310</td>
+                                </tr>
+                                <tr class="green-text">
+                                    <th>TA</th>
+                                    <td>BDs$ 0</td>
+                                </tr>
+                                <tr class="red-text">
+                                    <th>P.A.Y.E</th>
+                                    <td>-BDs$ 180</td>
+                                </tr>
+                                <tr class="red-text">
+                                    <th>N.I.S</th>
+                                    <td>-BDs$ 170</td>
+                                </tr>
+                                <tr class="red-text">
+                                    <th>Profession Tax</th>
+                                    <td>-BDs$ 0</td>
+                                </tr>
+                                <tr class="red-text">
+                                    <th>TDS</th>
+                                    <td>-BDs$ 700</td>
+                                </tr>
+                                <tr class="red-text">
+                                    <th>Staff Loan</th>
+                                    <td>-BDs$ 0</td>
+                                </tr>
+                                <tr class="red-text">
+                                    <th>Mortgage</th>
+                                    <td>-BDs$ 0</td>
+                                </tr>
+                                <tr class="red-text">
+                                    <th>Pension</th>
+                                    <td>-BDs$ 0</td>
+                                </tr>
+                                <tr class="red-text">
+                                    <th>Health Insurance</th>
+                                    <td>-BDs$ 0</td>
+                                </tr>
+                                <tr class="green-background mb-3">
+                                    <th>Health Insurance</th>
+                                    <td>-BDs$ 0</td>
+                                </tr>
+                                <tr class="red-background">
+                                    <th>Health Insurance</th>
+                                    <td>-BDs$ 0</td>
+                                </tr>
+                                <tr class="blue-background">
+                                    <th>Health Insurance</th>
+                                    <td>-BDs$ 0</td>
+                                </tr>
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PROFILE AND SALARY END -->
+     </div>
+ </main>
+<!-- DASHBOARD PROFILE SECTION END -->  
 
-  
-        <!-- BAR CHART ID CALL -->
-    
 
 
 
@@ -274,17 +416,6 @@
 
 
 
-
-
-
-
-
-
-
-    <!-- BAR CHART JQUEY -->
-    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
-    <script src='https://d3js.org/d3.v4.min.js'></script>
-    <script src="./dist/jquery.bar.chart.min.js"></script>
 
     <!-- BOOTSTRAP JAVASCRIPT -->
    

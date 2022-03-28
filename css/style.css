@@ -50,7 +50,7 @@ button.no-outline {
     border: none;
     background: transparent;
     position: absolute;
-    top: 70px;
+    top: 118px;
 } 
 
 /* <!-- DASHBOARD SECTION START --> */
@@ -262,7 +262,7 @@ p.dark-color {
 .basic-label {
     position: relative;
 }
-.basic-label .basic-radius {
+.basic-radius {
    border-radius: 12px;
    padding: 12px;
 }
@@ -270,6 +270,12 @@ p.dark-color {
     position: absolute;
     top: -12px;
     left: 40px;
+    background: #ffffff;
+    color: #91929E;
+    font-weight: 400;
+    padding: 0 5px;
+}
+label{
     background: #ffffff;
     color: #91929E;
     font-weight: 400;
@@ -337,3 +343,89 @@ p.form-payment {
     right: 34px;
 }
 /* <!-- EDIT PROFILE SECTION END --> */
+/* <!-- DASHBOARD PROFILE SECTION START -->  */
+.author-content-info{
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 48px 15px ;
+    position: relative;
+    
+}
+.edit.button {
+    position: absolute;
+    right: 25px;
+    top: 30px;
+}
+.profile-image{
+    border: 2px solid #0074BD;
+    border-radius: 50%;
+}
+.border-space{
+    border-bottom: 1px solid #91929E;
+}
+.profile-table  th {
+    padding: 12px 11px;
+    font-weight: 400;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.profile-table {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+.profile-table tr {
+    box-shadow: none;
+}
+.profile-table  td {
+    padding: 12px 11px;
+    text-align: end;
+    font-weight: 500;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.green-text  td{
+    color: #00AF70;
+}
+.red-text td{
+    color: #F45959;
+}
+.table>:not(caption)>*>*{
+    border-bottom-width: 0;
+}
+.green-background{
+    background: rgba(0, 175, 112, 0.15);
+    
+}
+.green-background th {
+   color: #00AF70;
+  
+}
+.green-background td {
+   color: #00AF70;
+   
+}
+.red-background{
+    background: rgba(244, 89, 89, 0.15);
+    
+}
+.red-background th {
+   color: #F45959;
+  
+}
+.red-background td {
+   color: #F45959;
+   
+}
+.blue-background{
+    background: rgba(45, 147, 207, 0.15);
+    
+}
+.blue-background th {
+   color: #0074BD;
+  
+}
+.blue-background td {
+   color: #0074BD;
+   
+}
+/* <!-- DASHBOARD PROFILE SECTION END -->  */
