@@ -7,10 +7,18 @@ body{
     color: #0A1436;
     font-weight: 300;
 }
-
+a.nav-link:focus.active {
+    background: #0A1436;
+    color: #ffffff;
+}
 a{
     text-decoration: none;
     color: #0A1436;
+
+}
+a.nav-link:hover{
+    text-decoration: none;
+    color: #ffffff;
 
 }
 .sidenav{
@@ -112,7 +120,7 @@ p.author span{
 .author{
     font-size: 14px;
     line-height: 1.2;
-    color: #91929E;
+    color: #0A1436;
 }
 .search-profile-header{
     margin-bottom: 40px;
@@ -273,7 +281,7 @@ p.dark-color {
 }
 .page-item .another-color{
     background: #E0EFF8;
-    padding: 12px;
+    
 }
 /* <!-- DASHBOARD SECTION END --> */
 /* <!-- EMPLOYEE BASIC INFO SECTION START --> */
@@ -364,6 +372,10 @@ p.form-payment {
     right: 21px;
     top: 11px;
 }
+.employee-table{
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
 /* <!-- EDIT PROFILE SECTION END --> */
 /* <!-- DASHBOARD PROFILE SECTION START -->  */
 .author-content-info{
@@ -450,4 +462,67 @@ p.form-payment {
    color: #0074BD;
    
 }
+/* POPUP START */
+.popub-radius{
+    border-radius: 24px;
+    padding: 40px;
+}
+.popup-header{
+    border-bottom: none;
+    border-top: none;
+}
+.modal-content .basic-radius{
+    border: 1.5px solid #0074BD;
+    margin-top: -14px;
+}
+.add-button{
+    border-radius: 14px;
+    padding: 8px 32px;
+}
+
+/* POPUP END */
+
 /* <!-- DASHBOARD PROFILE SECTION END -->  */
+
+/* ATTEMDANCE SECTION START */
+.attendace-details{
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 18px 34px;
+}
+.green-btn {
+    background: #00AF70;
+    padding: 13px 35px;
+    border-radius: 14px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.light-btn {
+    background: #E3E3E3;
+    padding: 13px 35px;
+    border-radius: 14px;
+    color: #ffffff;
+    font-weight: 400;
+}
+.working-days {
+    padding: 24px 17px;
+    box-shadow: 4px 4px 18px -2px rgb(231 228 232 / 80%);
+    border-radius: 20px;
+    width: 120px;
+}
+.blue-text{
+    color: #0074BD;
+}
+.red-text{
+    color: #F45959;
+}
+.small-font-size{
+    font-size: 14px;
+    line-height: 1.2;
+    color: #91929E;
+}
+.green-border{
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+/* ATTEMDANCE SECTION END */

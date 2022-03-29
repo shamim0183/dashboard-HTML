@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <!-- GOOGLE FONTS -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+   
+       <!-- FONT AWESOME ICON -->
+       <script src="https://kit.fontawesome.com/152a5c6911.js" crossorigin="anonymous"></script>
+   
+       <!-- BOOTSTRAP STYLESHEET -->
+       <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+   
+       <!-- BAR CHART PLUGIN -->
+       <link rel="stylesheet" href="./dist/bar.chart.min.css" />
+   
+       <!-- CUSTOME STYLESHEET -->
+       <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <a class="btn btn-primary" data-bs-toggle="modal" href="#addModalToggle" role="button">Modal Add field</a>
+    <a class="btn btn-primary" data-bs-toggle="modal" href="#deleteModalToggle" role="button">Modal Delete field</a>
+    <div class="add-field-popup">
+        <div class="modal fade" id="addModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content popub-radius">
+                <div class="modal-header popup-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">Add another field:</h5>
+                 
+                </div>
+                <div class="modal-body">
+                  <input class="form-control basic-radius" type="text" name="" id="" placeholder="Type your field name">
+                </div>
+                <div class="modal-footer popup-header">
+                    <div type="button"  data-bs-dismiss="modal" aria-label="Close"> <p class="h6 mb-0 me-4">Cancel</p></div>
+                  <button class="btn btn-dark add-button" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Add</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="delete-field-popup">
+        <div class="modal fade" id="deleteModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content popub-radius">
+                <div class="modal-header popup-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">Delete field:</h5>
+                 
+                </div>
+                <div class="modal-body">
+                  <input class="form-control basic-radius" type="text" name="" id="" placeholder="Type your field name">
+                </div>
+                <div class="modal-footer popup-header">
+                    <div type="button"  data-bs-dismiss="modal" aria-label="Close"> <p class="h6 mb-0 me-4">Cancel</p></div>
+                  <button class="btn btn-danger add-button" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Delete</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+      <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

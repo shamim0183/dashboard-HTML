@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attendance</title>
+
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    
+        <!-- FONT AWESOME ICON -->
+        <script src="https://kit.fontawesome.com/152a5c6911.js" crossorigin="anonymous"></script>
+    
+        <!-- BOOTSTRAP STYLESHEET -->
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    
+        <!-- BAR CHART PLUGIN -->
+        <link rel="stylesheet" href="./dist/bar.chart.min.css" />
+    
+        <!-- CUSTOME STYLESHEET -->
+        <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- SIDENAV SECTION START -->       
+
+    <div class=" sidenav" >
+        <div class="container">
+            <div class="offcanvas-title mb-5 px-3" id="offcanvasScrollingLabel"> 
+                <img src="./image/Simplix Logo.png" alt="" class="img-fluid">
+            </div>
+            
+            
+                <ul class="nav flex-column">
+                    <li class="nav-item ">
+                    
+                    <a class="nav-link " aria-current="page" href="#"> <span>
+                        
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.18665 17.1115C1.18665 14.6984 2.88397 12.643 5.19069 12.2627L5.39847 12.2284C7.24556 11.9239 9.12773 11.9239 10.9748 12.2284L11.1826 12.2627C13.4893 12.643 15.1866 14.6984 15.1866 17.1115C15.1866 18.1545 14.3682 19 13.3585 19H3.01477C2.00513 19 1.18665 18.1545 1.18665 17.1115Z" stroke="#0A1436" stroke-width="1.5"/>
+                        <path d="M12.27 4.9375C12.27 7.11212 10.4418 8.875 8.18667 8.875C5.9315 8.875 4.10333 7.11212 4.10333 4.9375C4.10333 2.76288 5.9315 1 8.18667 1C10.4418 1 12.27 2.76288 12.27 4.9375Z" stroke="#0A1436" stroke-width="1.5"/>
+                        </svg>
+    
+                        </span> Profile</a>
+                    </li>
+                    <li class="nav-item ">
+                    <a class="nav-link" href="#"> <span>
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.3442 10.0999L10.1153 18.1654C9.61664 18.6577 9.02365 19.0487 8.37036 19.3159C7.71708 19.5832 7.01637 19.7214 6.30843 19.7228C5.60049 19.7241 4.89926 19.5884 4.24495 19.3236C3.59064 19.0587 2.99614 18.6699 2.49555 18.1795C1.99496 17.689 1.59813 17.1065 1.32783 16.4655C1.05753 15.8244 0.919081 15.1373 0.92042 14.4437C0.921758 13.7501 1.06286 13.0635 1.33563 12.4235C1.6084 11.7834 2.00747 11.2024 2.50995 10.7138L10.7347 2.64933C11.407 1.99057 12.3189 1.62048 13.2698 1.62048C14.2207 1.62048 15.1326 1.99057 15.8049 2.64933C16.4773 3.30809 16.855 4.20156 16.855 5.13319C16.855 6.06482 16.4773 6.95829 15.8049 7.61705L7.56782 15.6815C7.2294 16.0001 6.77697 16.176 6.30767 16.1714C5.83836 16.1668 5.3896 15.9821 5.05774 15.657C4.72587 15.3318 4.53736 14.8921 4.53268 14.4323C4.528 13.9725 4.70752 13.5292 5.03269 13.1976L12.6381 5.75517" stroke="" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </span> Employee Payslip</a>
+                    </li>
+                    <li class="nav-item ">
+                    <a class="nav-link active" href="#"><span>
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5394 8.95043C4.1909 6.17301 6.35953 4.00437 9.13696 3.35288C11.1428 2.88237 13.2303 2.88237 15.2361 3.35288C18.0135 4.00437 20.1822 6.17301 20.8336 8.95044C21.3042 10.9563 21.3042 13.0437 20.8336 15.0496C20.1822 17.827 18.0135 19.9956 15.2361 20.6471C13.2303 21.1176 11.1428 21.1176 9.13696 20.6471C6.35954 19.9956 4.1909 17.827 3.5394 15.0496C3.0689 13.0437 3.0689 10.9563 3.5394 8.95043Z" stroke="" stroke-width="1.5"/>
+                        <path d="M14.6867 14.5L11.8481 12.6939V9" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </span> Attendance</a>
+                    </li>                                    
+                    <li class="nav-item ">
+                    <a class="nav-link" href="#"><span>                        
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.18665 11.4623H11.3776C12.7932 11.4623 13.6586 9.7739 12.9127 8.46708L12.4231 7.60924C11.9413 6.76504 11.9413 5.69728 12.4231 4.85309L12.9128 3.99524C13.6586 2.68842 12.7932 1 11.3776 1L1.18665 1L1.18665 11.4623ZM1.18665 11.4623L1.18665 17" stroke="#0A1436" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>    
+                        </span> Support</a>
+                    </li>                
+                </ul>
+                <div class="copywrite text-center">
+                    <p class="mb-4">© Simplix Payroll 2021  </p>
+                </div>
+            </div>
+    
+        </div>
+        <button class="no-outline"  type="button" ><img src="./image/right arrow.png" alt=""></button>
+    </div>
+    
+    
+    <!-- SIDENAV SECTION END -->
+    <!-- DASHBOARD HEADER SECTION START -->
+    <main style="    margin-left: 280px;">
+<div class="search-profile-header d-flex align-items-center">
+    
+    <div class="container">
+        
+        <div class="d-flex justify-content-between align-items-center">
+
+            <a href="#" class="back-option">
+                <span><img src="./image/Arrow - Left.jpg" alt="" class="img-fluid me-2"></span>
+                <span>Back</span>
+            </a>
+            
+            <div class="profile">
+                <a href="#" class="d-flex align-items-center text-start">
+                    <span>
+                        <img class="img-fluid" src="./image/ladiespic.png" alt="ladiespic">
+                    </span>
+                    <p class="author mx-3 my-0">Guy Hawkins <span class="d-block">UX Designer</span></p>
+                    <span>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </span>
+                </a >
+            </div>
+        </div>
+    </div>    
+</div>
+
+<div class="container">
+    <div class="dashboard-items ">                    
+        
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center">
+                    
+                        <div class="h1 ms-3">Attendance</div>                    
+
+                </div>
+                <div class="col-lg-6 ">
+                    <fieldset class="d-flex justify-content-end gap-4">
+                        <div class="form-date">
+                            <label for="" class="mb-2 ">Form</label>
+                            <input class="form-control basic-radius" type="date" name="" id="">
+                        </div>
+                        <div class="to-date">
+                            <label for="" class="mb-2 ">To</label>
+                            <input class="form-control basic-radius" type="date" name="" id="">
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+                            
+    </div>
+    <div class="attendace-details mb-5">
+        <div class="attendace content mb-3">
+            <span>Name: <span class="h6 me-4"> Guy Hawkins</span></span>
+            <span>National Registration :<span class="h6"> UX0190219-AX</span></span>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="mb-3">Today</p>
+                <div class="d-flex">
+                    <div class="check-in me-4 mb-3">
+                        <input class="form-control mb-4" type="time" name="" id="">
+                        <a href="#" class="green-btn">Check-in</a>
+                    </div>
+                    <div class="check-out mb-3">
+                        <input class="form-control mb-4" type="time" name="" id="">
+                        <a href="#" class="light-btn">Check-out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="d-flex gap-4">
+                    <div class="working-days">
+                        <p class="mb-3 small-font-size">Working Days</p>
+                        <p class="h3 text-center blue-text">20</p>
+                    </div>
+                    <div class="working-days">
+                        <p class="mb-3 small-font-size text-center">Leaves</p>
+                        <p class="h3 text-center red-text">0</p>
+                    </div>
+                    <div class="working-days">
+                        <p class="mb-3 small-font-size text-center">Holidays</p>
+                        <p class="h3 text-center red-text">2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="attendace-checking-time">
+        <table class="table employee-table">
+            <tbody>
+                <tr class="bg-body ">
+                    <td class="green-border">
+                        <p class="small-font-size mb-2">Date</p>
+                        <p><img src="./image/Grid.png" alt="" class="img-fluid me-2"> 28th, Dec 2020, Saturday</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-in Time</p>
+                        <p><img src="./image/directions_walk_24px.png" alt="" class="img-fluid me-2"> 10:00 AM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-out Time</p>
+                        <p><img src="./image/directions_walk_24px red.png" alt="" class="img-fluid me-2"> 07:25 PM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Total Hours</p>
+                        <p ><img src="./image/access_time.png" alt="" class="img-fluid me-2">9.25 hrs</p>
+                    </td>
+                    <td class="action">
+                        <p class="small-font-size mb-2">Holiday</p>
+                        <p >N/A</p>
+                    </td>
+                </tr>
+                <tr class="bg-body ">
+                    <td class="green-border">
+                        <p class="small-font-size mb-2">Date</p>
+                        <p><img src="./image/Grid.png" alt="" class="img-fluid me-2"> 28th, Dec 2020, Saturday</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-in Time</p>
+                        <p><img src="./image/directions_walk_24px.png" alt="" class="img-fluid me-2"> 10:00 AM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-out Time</p>
+                        <p><img src="./image/directions_walk_24px red.png" alt="" class="img-fluid me-2"> 07:25 PM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Total Hours</p>
+                        <p ><img src="./image/access_time.png" alt="" class="img-fluid me-2">9.25 hrs</p>
+                    </td>
+                    <td class="action">
+                        <p class="small-font-size mb-2">Holiday</p>
+                        <p >N/A</p>
+                    </td>
+                </tr>
+                <tr class="bg-body ">
+                    <td class="green-border">
+                        <p class="small-font-size mb-2">Date</p>
+                        <p><img src="./image/Grid.png" alt="" class="img-fluid me-2"> 28th, Dec 2020, Saturday</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-in Time</p>
+                        <p><img src="./image/directions_walk_24px.png" alt="" class="img-fluid me-2"> 10:00 AM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-out Time</p>
+                        <p><img src="./image/directions_walk_24px red.png" alt="" class="img-fluid me-2"> 07:25 PM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Total Hours</p>
+                        <p ><img src="./image/access_time.png" alt="" class="img-fluid me-2">9.25 hrs</p>
+                    </td>
+                    <td class="action">
+                        <p class="small-font-size mb-2">Holiday</p>
+                        <p >N/A</p>
+                    </td>
+                </tr>
+                <tr class="bg-body ">
+                    <td class="green-border">
+                        <p class="small-font-size mb-2">Date</p>
+                        <p><img src="./image/Grid.png" alt="" class="img-fluid me-2"> 28th, Dec 2020, Saturday</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-in Time</p>
+                        <p><img src="./image/directions_walk_24px.png" alt="" class="img-fluid me-2"> 10:00 AM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-out Time</p>
+                        <p><img src="./image/directions_walk_24px red.png" alt="" class="img-fluid me-2"> 07:25 PM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Total Hours</p>
+                        <p ><img src="./image/access_time.png" alt="" class="img-fluid me-2">9.25 hrs</p>
+                    </td>
+                    <td class="action">
+                        <p class="small-font-size mb-2">Holiday</p>
+                        <p >N/A</p>
+                    </td>
+                </tr>
+                <tr class="bg-body ">
+                    <td class="green-border">
+                        <p class="small-font-size mb-2">Date</p>
+                        <p><img src="./image/Grid.png" alt="" class="img-fluid me-2"> 28th, Dec 2020, Saturday</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-in Time</p>
+                        <p><img src="./image/directions_walk_24px.png" alt="" class="img-fluid me-2"> 10:00 AM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-out Time</p>
+                        <p><img src="./image/directions_walk_24px red.png" alt="" class="img-fluid me-2"> 07:25 PM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Total Hours</p>
+                        <p ><img src="./image/access_time.png" alt="" class="img-fluid me-2">9.25 hrs</p>
+                    </td>
+                    <td class="action">
+                        <p class="small-font-size mb-2">Holiday</p>
+                        <p >N/A</p>
+                    </td>
+                </tr>
+                <tr class="bg-body ">
+                    <td class="green-border">
+                        <p class="small-font-size mb-2">Date</p>
+                        <p><img src="./image/Grid.png" alt="" class="img-fluid me-2"> 28th, Dec 2020, Saturday</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-in Time</p>
+                        <p><img src="./image/directions_walk_24px.png" alt="" class="img-fluid me-2"> 10:00 AM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-out Time</p>
+                        <p><img src="./image/directions_walk_24px red.png" alt="" class="img-fluid me-2"> 07:25 PM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Total Hours</p>
+                        <p ><img src="./image/access_time.png" alt="" class="img-fluid me-2">9.25 hrs</p>
+                    </td>
+                    <td class="action">
+                        <p class="small-font-size mb-2">Holiday</p>
+                        <p >N/A</p>
+                    </td>
+                </tr>
+                <tr class="bg-body ">
+                    <td class="green-border">
+                        <p class="small-font-size mb-2">Date</p>
+                        <p><img src="./image/Grid.png" alt="" class="img-fluid me-2"> 28th, Dec 2020, Saturday</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-in Time</p>
+                        <p><img src="./image/directions_walk_24px.png" alt="" class="img-fluid me-2"> 10:00 AM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-out Time</p>
+                        <p><img src="./image/directions_walk_24px red.png" alt="" class="img-fluid me-2"> 07:25 PM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Total Hours</p>
+                        <p ><img src="./image/access_time.png" alt="" class="img-fluid me-2">9.25 hrs</p>
+                    </td>
+                    <td class="action">
+                        <p class="small-font-size mb-2">Holiday</p>
+                        <p >N/A</p>
+                    </td>
+                </tr>
+                <tr class="bg-body ">
+                    <td class="green-border">
+                        <p class="small-font-size mb-2">Date</p>
+                        <p><img src="./image/Grid.png" alt="" class="img-fluid me-2"> 28th, Dec 2020, Saturday</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-in Time</p>
+                        <p><img src="./image/directions_walk_24px.png" alt="" class="img-fluid me-2"> 10:00 AM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-out Time</p>
+                        <p><img src="./image/directions_walk_24px red.png" alt="" class="img-fluid me-2"> 07:25 PM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Total Hours</p>
+                        <p ><img src="./image/access_time.png" alt="" class="img-fluid me-2">9.25 hrs</p>
+                    </td>
+                    <td class="action">
+                        <p class="small-font-size mb-2">Holiday</p>
+                        <p >N/A</p>
+                    </td>
+                </tr>
+                <tr class="bg-body ">
+                    <td class="green-border">
+                        <p class="small-font-size mb-2">Date</p>
+                        <p><img src="./image/Grid.png" alt="" class="img-fluid me-2"> 28th, Dec 2020, Saturday</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-in Time</p>
+                        <p><img src="./image/directions_walk_24px.png" alt="" class="img-fluid me-2"> 10:00 AM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Check-out Time</p>
+                        <p><img src="./image/directions_walk_24px red.png" alt="" class="img-fluid me-2"> 07:25 PM</p>
+                    </td>
+                    <td>
+                        <p class="small-font-size mb-2">Total Hours</p>
+                        <p ><img src="./image/access_time.png" alt="" class="img-fluid me-2">9.25 hrs</p>
+                    </td>
+                    <td class="action">
+                        <p class="small-font-size mb-2">Holiday</p>
+                        <p >N/A</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- DASHBOARD HEADER SECTION END --> 
+    </main>
+</body>
+</html>
