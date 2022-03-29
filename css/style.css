@@ -7,10 +7,27 @@ body{
     color: #0A1436;
     font-weight: 300;
 }
+
 a{
     text-decoration: none;
     color: #0A1436;
 
+}
+.sidenav{
+    height: 100%;
+    width: 280px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.copywrite {
+    position: fixed;
+    bottom: 0;
+    left: 40px;
 }
 p{
     margin-bottom: 0;
@@ -26,7 +43,7 @@ p{
 .offcanvas{
     border-right: 5px solid red;
 }
-.nav .nav-item .nav-link:focus {
+.nav .nav-item .nav-link:hover{
     background: #0A1436;
     color: #ffffff;
 }
@@ -47,10 +64,7 @@ p{
 .nav-link{
     color: #0A1436;
 }
-.nav-link:hover{
-    color: #0A1436;
-    background: #0A1436;
-}
+
 
 .active:focus{
     background: #0A1436;
@@ -60,6 +74,7 @@ button.no-outline {
     background: transparent;
     position: absolute;
     top: 118px;
+    left: 280px;
 } 
 
 /* <!-- DASHBOARD SECTION START --> */
@@ -334,9 +349,6 @@ p.form-payment {
     position: relative;
     padding: 38px;
 }
-.edit-profile-section .cross-button{
-    position: absolute;
-}
 .bg-image {
     background-image: url(../image/Gallery.svg);
     background-repeat: no-repeat;
@@ -349,7 +361,8 @@ p.form-payment {
 }
 .edit-profile-section .cross-button {
     position: absolute;
-    right: 34px;
+    right: 21px;
+    top: 11px;
 }
 /* <!-- EDIT PROFILE SECTION END --> */
 /* <!-- DASHBOARD PROFILE SECTION START -->  */
