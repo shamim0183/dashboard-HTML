@@ -21,6 +21,12 @@ a.nav-link:hover{
     color: #ffffff;
 
 }
+a.nav-link:hover svg>path{
+   
+    fill: #ffffff;
+    
+
+}
 .sidenav{
     height: 100%;
     width: 280px;
@@ -65,10 +71,7 @@ p{
 .nav .nav-item a span{
     margin-right: 10px;
 }
-.nav .nav-item a span svg{
-    
-    stroke: red;
-}
+
 .nav-link{
     color: #0A1436;
 }
@@ -97,7 +100,7 @@ button.no-outline {
     background: #E5E5E5;
     padding: 12px 20px;
     width: 255px;
-
+    
 }
 .search input{
     color: red;
@@ -124,6 +127,7 @@ p.author span{
 }
 .search-profile-header{
     margin-bottom: 40px;
+    
 }
 span.date-logo {
     background: #C3D4DF;
@@ -168,6 +172,7 @@ span.date-logo {
 }
 .dashboard-items{
     margin-bottom: 40px;
+    margin-top: -15px;
 }
 .payroll-background {
     background: #ffffff;
@@ -201,7 +206,9 @@ span.date-logo {
 .dashboard-payroll{
     margin-bottom:52px ;
 }
-
+.dashboard-main-section{
+    margin-left: 280px;
+}
 /* <!-- DASGBOARD MAIN SECTION END --> */
 
 /* DASHBOARD NEW START */
@@ -369,8 +376,9 @@ p.form-payment {
 }
 .edit-profile-section .cross-button {
     position: absolute;
-    right: 21px;
-    top: 11px;
+    right: 35px;
+    top: 25px;
+    z-index: 11;
 }
 .employee-table{
     border-collapse: separate;
@@ -485,6 +493,10 @@ p.form-payment {
 /* <!-- DASHBOARD PROFILE SECTION END -->  */
 
 /* ATTEMDANCE SECTION START */
+.attendance-label{
+    background: transparent;
+    color: #000000;
+}
 .attendace-details{
     background: #ffffff;
     border-radius: 24px;
@@ -524,6 +536,9 @@ p.form-payment {
 .green-border{
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
+}
+.check-out{
+    margin-left: 10px;
 }
 /* ATTEMDANCE SECTION END */
 /* LOGIN SECTION START */
@@ -579,3 +594,133 @@ p.form-payment {
     align-items: center;
 }
 /* LOGIN SECTION END */
+
+/* MEDIA QUERY */
+@media screen and (max-width: 992px) {
+    .sidenav{
+        display: none;
+    }
+    .h1 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    
+    .h3 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .payroll-cost {
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .payroll-width {
+        width: 180px;
+        
+        margin: 0;
+    }
+    .payroll-background {
+        margin-bottom: 40px;
+    }
+    p.small-font {
+        font-size: 12px;
+    }
+    .dashboard-main-section{
+        margin-left: 0;
+    }
+    .pay-day-background {
+        margin-bottom: 40px;
+    }
+    .arrow-btn{
+        display: none;
+    }
+   
+    a.bg-color{
+        padding: 8px 17px;
+    }
+    .employye-search-icon {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .month-dropdown {
+        margin-bottom: 20px;
+    }
+    p.form-payment{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    a.payslip-color {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .basic-label label{
+        font-size: 10px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .basic-radius{
+        font-size: 12px;
+    }
+   
+    .h5 {
+        font-size: 12px;
+    }
+   
+
+  }
+@media screen and (max-width: 375px) {
+    .sidenav{
+        display: none;
+    }
+    .h1 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .search{
+        width: 55px;
+    }
+    .h3 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .payroll-background {
+        margin-bottom: 40px;
+    }
+    p.small-font {
+        font-size: 12px;
+    }
+    .dashboard-main-section{
+        margin-left: 0;
+    }
+    .search{
+        width: 55px;
+    }
+    .working-times{
+        flex-direction: column;
+    }
+    .attendance-check{
+        flex-direction: column;
+    }
+    .working-days{
+        width: 100%;
+    }
+    .check-out{
+        margin-left: 0;
+    }
+    .attendace-content {
+        flex-direction: column;
+        display: flex;
+    }
+    .attendace-text{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    form.attendance-form {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+  }
