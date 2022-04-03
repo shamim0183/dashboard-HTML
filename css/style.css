@@ -290,6 +290,9 @@ p.dark-color {
     background: #E0EFF8;
     
 }
+.start-date{
+    margin-left: 30px;
+}
 /* <!-- DASHBOARD SECTION END --> */
 /* <!-- EMPLOYEE BASIC INFO SECTION START --> */
 .basicinfo{
@@ -665,7 +668,44 @@ p.form-payment {
     .h5 {
         font-size: 12px;
     }
-   
+    .circlechart {
+        margin: 0 auto;
+    }
+    .circlechart-wrap{
+        flex-direction: column;
+        display: flex;
+    }
+    p.h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .working-times{
+        flex-direction: column;
+    }
+    .attendance-check{
+        flex-direction: column;
+    }
+    .working-days{
+        width: 100%;
+    }
+    .check-out{
+        margin-left: 0;
+    }
+    .attendace-content {
+        flex-direction: column;
+        display: flex;
+    }
+    .attendace-text{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    form.attendance-form {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
 
   }
 @media screen and (max-width: 375px) {
@@ -722,5 +762,23 @@ p.form-payment {
         text-align: center;
         display: flex;
         justify-content: center;
+    }
+    p.start-date {
+        margin-left: 14px;
+        font-size: 10px;
+    }
+    p.h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .circlechart {
+        margin: 0 auto;
+    }
+    .circlechart-wrap{
+        flex-direction: column;
+        display: flex;
+    }
+    .start-date{
+        margin-left: 0;
     }
   }
