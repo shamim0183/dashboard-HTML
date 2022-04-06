@@ -27,9 +27,12 @@ a.nav-link:hover svg>path{
     
 
 }
+.logo{
+    width: 281px;
+}
 .sidenav{
     height: 100%;
-    width: 280px;
+    
     position: fixed;
     z-index: 1;
     top: 0;
@@ -638,7 +641,7 @@ p.form-payment {
     }
    
     a.bg-color{
-        padding: 8px 17px;
+        padding: 8px 10px;
     }
     .employye-search-icon {
         width: 100%;
@@ -779,6 +782,9 @@ p.form-payment {
         display: flex;
     }
     .start-date{
+        margin-left: 0;
+    }
+    .navbar-light .navbar-nav .nav-link{
         margin-left: 0;
     }
   }
