@@ -40,6 +40,9 @@ a.nav-link:hover svg>path{
     background-color: #ffffff;
     overflow-x: hidden;
     padding-top: 20px;
+    border-right: 5px solid transparent;
+    border-image: linear-gradient(0deg, #3193CD,#00F2F8);
+    border-image-slice: 2;
 }
 .copywrite {
     position: fixed;
